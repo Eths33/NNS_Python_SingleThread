@@ -42,8 +42,8 @@ class Particle(object):
 
 		# Place particles at random locations
 		for i in range(particleCount):
-			xLoc : float = random.uniform(-halfDimx + 0.1, halfDimx - 0.1) # Real-valued distribution
-			yLoc : float = random.uniform(-halfDimy + 0.1, halfDimy - 0.1) # Return a random floating point number N such that a <= N <= b
+			xLoc : float = random.uniform(-halfDimx, halfDimx) # Real-valued distribution
+			yLoc : float = random.uniform(-halfDimy, halfDimy) # Return a random floating point number N such that a <= N <= b
 			self.locations[i * globals.DC + 0] = xLoc
 			self.locations[i * globals.DC + 1] = yLoc
 
